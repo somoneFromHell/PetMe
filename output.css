@@ -7,6 +7,25 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+/* Light mode style */
+/* Add this to your CSS file */
+/* Add this to your CSS file */
+/* Add this to your CSS file */
+
+
+
+.contactusform-color-lightmode {
+  color: rgb(18, 17, 17) ;  /* contact us form text color in light-mode */
+}
+
+.contactusform-color-darkmode{
+  /*if contact us form text color needs to be changed, can be chnaged here */
+}
+
+
+
+
+
 *,
 ::before,
 ::after {
@@ -209,6 +228,10 @@ textarea {
   padding: 0;
   /* 3 */
 }
+
+
+
+/*---change*/
 
 /*
 Remove the inheritance of text transform in Edge and Firefox.
@@ -420,6 +443,7 @@ img,
 video {
   max-width: 100%;
   height: auto;
+  width: fit-content;
 }
 
 *,
@@ -1320,6 +1344,17 @@ video {
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.border-red{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 0 0 / var(--tw-border-opacity));
+}
+
+.help { 
+  display: none; 
+  font-size: small;
+  color: red;
+}
+
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
@@ -1639,6 +1674,9 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-choco{
+  color: chocolate;
 }
 
 .text-gray-100 {
@@ -2207,3 +2245,15 @@ video {
     background-color: transparent;
   }
 }
+.text-lg {
+  
+  
+  transition: width 2s, transform 2s;
+}
+.text-lg:hover {
+  width: 1500px;
+  
+  border-radius:8px;
+  
+}
+
